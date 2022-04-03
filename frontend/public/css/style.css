@@ -108,8 +108,13 @@ body {}
   width: 50px;
   border-width: 5px;
   border-color: var(--primary-color);
-  opacity: 100%;
+  opacity: 1;
   margin-left: 150px;
+}
+
+.hr__footer {
+  border-color: #ffffff;
+  opacity: 0.2;
 }
 
 .price-box {
@@ -839,6 +844,7 @@ body {}
 }
 
 .footer__social {
+  margin-top: 20px;
   float: right;
 }
 
