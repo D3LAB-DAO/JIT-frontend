@@ -7,6 +7,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300&display=swap');
 
 /* English Range - 'Besley', serif; */
+@import url('https://fonts.googleapis.com/css2?family=Besley:wght@400;700&display=swap');
+
+/* English Range - 'Besley', serif; */
 @font-face {
   font-family: 'Nanum Myeongjo';
   font-style: normal;
@@ -32,7 +35,7 @@
   --warning-color: #f7d51d;
   --error-color: #e76e55;
   --gray-color: #eeeeee;
-  --dark-color: #212529;
+  --dark-color: #323232;
 }
 
 /*Reset*/
@@ -40,7 +43,7 @@ html,
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Nanum Myeongjo', serif;
+  font-family: 'Roboto Slab', serif;
   color: #1f4568;
 }
 
@@ -59,11 +62,7 @@ body {}
 }
 
 .sect--grey {
-  /*background-color: #ebeff9;*/
-}
-
-.sect--violet {
-  background-color: #6f79ff;
+  background-color: var(--dark-color);
 }
 
 .sect--padding-bottom {
@@ -91,6 +90,7 @@ body {}
   text-align: center;
   margin-top: 0px;
 
+  font-family: 'Besley', serif;
   font-size: 40px;
   font-weight: 700;
   color: var(--primary-color);
@@ -265,7 +265,6 @@ body {}
   border-radius: 20px;
   padding: 10px 25px;
   color: #fff;
-  box-shadow: 0px 18px 13px -6px rgba(0, 0, 0, 0.2);
   transition: all 0.4s;
   -webkit-transition: all 0.4s;
   -moz-transition: all 0.4s;
@@ -499,7 +498,8 @@ body {}
 }
 
 .site__title {
-  font-size: 50px;
+  font-family: 'Besley', serif;
+  font-size: 60px;
   font-weight: 700;
   color: var(--primary-color);
   margin-left: 150px;
@@ -819,7 +819,7 @@ body {}
 
 
 .footer {
-  background-color: #1f4467;
+  background-color: var(--dark-color);
   padding: 40px 0;
 }
 
@@ -831,7 +831,7 @@ body {}
   display: inline-block;
   line-height: 18px;
   vertical-align: middle;
-  color: #3a9fff;
+  color: var(--primary-color);
 }
 
 .footer__light {
