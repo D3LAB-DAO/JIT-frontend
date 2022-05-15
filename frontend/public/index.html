@@ -77,11 +77,11 @@
             created by
             Freepik - Flaticon</a>
         </span>
-        <span class="section-text">
+        <span class="uk-padding section-text">
           Repusitory is simply dummy text of the printing and typesetting industry.
-          <br /> Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown
+          Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown
           printer took a galley of type and scrambled it to make a type specimen book.
-          <br /> It has survived not only five centuries.
+          It has survived not only five centuries.
         </span>
       </div>
     </div>
@@ -173,9 +173,9 @@
       <h3 class="title-font section-title">&emsp;People&emsp;</h3>
 
       <div class="uk-width-2xlarge inline-block">
-        <div class="uk-child-width-1-2@m" uk-grid>
+        <div class="uk-child-width-1-2@s uk-padding" uk-grid>
           <div>
-            <div class="uk-card uk-card-default">
+            <div class="people-card uk-card uk-card-default" uk-toggle="target: #people-modal-1" type="button">
               <div class="uk-card-badge uk-label">Badge</div>
               <div class="uk-card-media-top">
                 <img src="src/profile_1.png" width="1800" height="1200" alt="">
@@ -194,15 +194,11 @@
                   <dt>Description</dt>
                   <dd>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</dd>
                 </dl>
-                <div class="uk-width-1-1 uk-button-group">
-                  <button class="uk-width-1-2 uk-button uk-button-default">SWAP</button>
-                  <button class="uk-width-1-2 uk-button uk-button-default">USE</button>
-                </div>
               </div>
             </div>
           </div>
           <div>
-            <div class="uk-card uk-card-default">
+            <div class="people-card uk-card uk-card-default" uk-toggle="target: #people-modal-1" type="button">
               <div class="uk-card-badge uk-label">Badge</div>
               <div class="uk-card-media-top">
                 <img src="src/profile_2.png" width="1800" height="1200" alt="">
@@ -221,12 +217,56 @@
                   <dt>Description</dt>
                   <dd>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</dd>
                 </dl>
-                <div class="uk-width-1-1 uk-button-group">
-                  <button class="uk-width-1-2 uk-button uk-button-default">SWAP</button>
-                  <button class="uk-width-1-2 uk-button uk-button-default">USE</button>
-                </div>
               </div>
             </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- people-modal -->
+  <div id="people-modal-1" class="uk-modal-full" uk-modal>
+    <div class="uk-modal-dialog">
+      <button class="uk-modal-close-full uk-close-large" type="button" uk-close></button>
+      <div class="uk-grid-collapse uk-child-width-1-2@s uk-flex-middle" uk-grid>
+        <div class="uk-background-cover" style="background-image: url('src/profile_1.png');" uk-height-viewport></div>
+        <div class="uk-padding-large">
+          <h1>History</h1>
+          <table class="uk-table uk-table-striped">
+            <thead>
+              <tr>
+                <th>From</th>
+                <th>Amount</th>
+                <th>State</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>0xae0..</td>
+                <td>50.35</td>
+                <td><span class="uk-badge uk-background-secondary">reject</span></td>
+              </tr>
+              <tr>
+                <td>0xae0..</td>
+                <td>50.35</td>
+                <td><span class="uk-badge uk-background-danger">cancel</span></td>
+              </tr>
+              <tr>
+                <td>0xae0..</td>
+                <td>50.35</td>
+                <td><span class="uk-badge">accept</span></td>
+              </tr>
+            </tbody>
+          </table>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+            ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+            nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
+            anim id est laborum.</p>
+            <div class="uk-width-1-1 uk-button-group">
+              <button class="uk-width-1-2 uk-button uk-button-primary">SWAP</button>
+              <button class="uk-width-1-2 uk-button uk-button-secondary">USE</button>
           </div>
         </div>
       </div>
