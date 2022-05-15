@@ -980,6 +980,7 @@ a.uk-link-reset,
 .uk-table-hover > tr:hover,
 .uk-table-hover tbody tr:hover {
   background: #ffd;
+  cursor: pointer;
 }
 /* Active state
  ========================================================================== */
