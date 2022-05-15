@@ -111,6 +111,16 @@ a:hover {
   padding-left: 10px;
 }
 
+.borrow-price {
+  display: block;
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+
+.borrow-text {
+  font-weight: 600;
+}
+
 .padding-top {
   padding-top: 150px;
 }
@@ -121,6 +131,10 @@ a:hover {
 
 .margin-30 {
   margin: 30px;
+}
+
+.margin-top-10 {
+  margin-top: 10px;
 }
 
 .width-50p {
@@ -205,6 +219,15 @@ a:hover {
 #page-lend,
 #page-mint {
   display: none;
+}
+
+/* Progres bar */
+.gray-bar {
+  background-color: gainsboro;
+}
+
+.primary-bar {
+  background-color: #1e87f0;
 }
 
 /* Slider */
