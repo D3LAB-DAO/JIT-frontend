@@ -52,8 +52,16 @@ a:hover {
   padding-top: 50px;
 }
 
+.align-center {
+  text-align: center;
+}
+
 .align-left {
   text-align: left;
+}
+
+.small-text {
+  font-size: 0.1rem;
 }
 
 .title-font {
@@ -68,6 +76,12 @@ a:hover {
   text-decoration-style: wavy;
   text-decoration-color: gray;
   padding-bottom: 15px;
+  display: block;
+}
+
+.section-text {
+  padding: 30px 10px 10px 10px;
+  display: block;
 }
 
 .token-name {
@@ -100,6 +114,10 @@ a:hover {
 
 .margin-30 {
   margin: 30px;
+}
+
+.width-50p {
+  width: 50%;
 }
 
 .height-100 {
