@@ -22,11 +22,11 @@
     <div class="uk-navbar-center">
       <div id="nav-title" class="uk-navbar-center">
         <span class="title-icon" uk-icon="icon: bookmark; ratio: 2"></span>
-        <h1 class="title-font">Repusitory</h1>
+        <h1 class="title-font"><a onclick="movePageOnClick(0)">Repusitory</a></h1>
       </div>
       <div id="nav-title-sm" class="uk-navbar-center">
         <span class="title-icon" uk-icon="icon: bookmark;"></span>
-        <h5 class="title-font">Repusitory</h1>
+        <h5 class="title-font"><a onclick="movePageOnClick(0)">Repusitory</a></h1>
       </div>
     </div>
     <div class="uk-navbar-right">
@@ -43,10 +43,10 @@
   <nav id="nav-menu" class="uk-navbar-container uk-navbar-transparent" uk-navbar>
     <div class="uk-navbar-center">
       <ul class="uk-navbar-nav">
-        <li class="uk-active"><a href="#">Top</a></li>
-        <li><a href="#">People</a></li>
-        <li><a href="#">Lend</a></li>
-        <li><a href="#">Mint</a></li>
+        <li class="menu-top"><a onclick="movePageOnClick(1)">Top</a></li>
+        <li class="menu-people"><a onclick="movePageOnClick(2)">People</a></li>
+        <li class="menu-lend"><a onclick="movePageOnClick(3)">Lend</a></li>
+        <li class="menu-mint"><a onclick="movePageOnClick(4)">Mint</a></li>
       </ul>
     </div>
   </nav>
@@ -56,100 +56,150 @@
     <div class="uk-offcanvas-bar w-100 no-transition">
       <button class="uk-offcanvas-close" type="button" uk-close></button>
       <ul class="uk-nav uk-nav-default uk-text-large padding-top">
-        <li class="uk-active"><a href="#">Top</a></li>
-        <li><a href="#">People</a></li>
-        <li><a href="#">Lend</a></li>
-        <li><a href="#">Mint</a></li>
+        <li class="menu-top" uk-toggle="#offcanvas-slide"><a onclick="movePageOnClick(1)">Top</a></li>
+        <li class="menu-people" uk-toggle="#offcanvas-slide"><a onclick="movePageOnClick(2)">People</a></li>
+        <li class="menu-lend" uk-toggle="#offcanvas-slide"><a onclick="movePageOnClick(3)">Lend</a></li>
+        <li class="menu-mint" uk-toggle="#offcanvas-slide"><a onclick="movePageOnClick(4)">Mint</a></li>
       </ul>
 
     </div>
   </div>
 
   <!-- Contents -->
-  <div class="section">
-    <h3 class="title-font section-title">&emsp;Top 5&emsp;</h3>
-    <div class="uk-width-2xlarge inline-block">
-      <div class="uk-card uk-card-default margin-30 padding-bottom">
-        <div class="uk-padding align-left">
-          <span uk-icon="heart"></span>
-          <span class="token-name">BTC</span>
-          <span class="token-fullname">Bitcoin</span>
-          <br />
-          <span class="token-price">39,590,000</span>
-          <span class="token-price-diff uk-text-primary">▼ 272,000 (-0.68%)</span>
-        </div>
-        <div class="height-100">
-          <canvas id="chart-1"></canvas>
-        </div>
-      </div>
-    </div><div class="uk-width-2xlarge inline-block">
-      <div class="uk-card uk-card-default margin-30 padding-bottom">
-        <div class="uk-padding align-left">
-          <span uk-icon="heart"></span>
-          <span class="token-name">BTC</span>
-          <span class="token-fullname">Bitcoin</span>
-          <br />
-          <span class="token-price">39,590,000</span>
-          <span class="token-price-diff uk-text-primary">▼ 272,000 (-0.68%)</span>
-        </div>
-        <div class="height-100">
-          <canvas id="chart-2"></canvas>
+  <div id="page-home">
+    <div class="section">
+      <h3 class="title-font section-title">&emsp;Home&emsp;</h3>
+      <div class="uk-width-2xlarge inline-block">
+        <div class="uk-card uk-card-default margin-30 padding-bottom">
         </div>
       </div>
     </div>
-    <div class="uk-width-2xlarge inline-block">
-      <div class="uk-card uk-card-default margin-30 padding-bottom">
-        <div class="uk-padding align-left">
-          <span uk-icon="heart"></span>
-          <span class="token-name">BTC</span>
-          <span class="token-fullname">Bitcoin</span>
-          <br />
-          <span class="token-price">39,590,000</span>
-          <span class="token-price-diff uk-text-primary">▼ 272,000 (-0.68%)</span>
-        </div>
-        <div class="height-100">
-          <canvas id="chart-3"></canvas>
-        </div>
-      </div>
-    </div>
-    <div class="uk-width-2xlarge inline-block">
-      <div class="uk-card uk-card-default margin-30 padding-bottom">
-        <div class="uk-padding align-left">
-          <span uk-icon="heart"></span>
-          <span class="token-name">BTC</span>
-          <span class="token-fullname">Bitcoin</span>
-          <br />
-          <span class="token-price">39,590,000</span>
-          <span class="token-price-diff uk-text-primary">▼ 272,000 (-0.68%)</span>
-        </div>
-        <div class="height-100">
-          <canvas id="chart-4"></canvas>
-        </div>
-      </div>
-    </div>
-    <div class="uk-width-2xlarge inline-block">
-      <div class="uk-card uk-card-default margin-30 padding-bottom">
-        <div class="uk-padding align-left">
-          <span uk-icon="heart"></span>
-          <span class="token-name">BTC</span>
-          <span class="token-fullname">Bitcoin</span>
-          <br />
-          <span class="token-price">39,590,000</span>
-          <span class="token-price-diff uk-text-primary">▼ 272,000 (-0.68%)</span>
-        </div>
-        <div class="height-100">
-          <canvas id="chart-5"></canvas>
-        </div>
-      </div>
-    </div>
-
   </div>
+
+  <div id="page-top">
+    <div class="section">
+      <h3 class="title-font section-title">&emsp;Top 5&emsp;</h3>
+      <div class="uk-width-2xlarge inline-block">
+        <div class="uk-card uk-card-default margin-30 padding-bottom">
+          <div class="uk-padding align-left">
+            <span uk-icon="heart"></span>
+            <span class="token-name">BTC</span>
+            <span class="token-fullname">Bitcoin</span>
+            <br />
+            <span class="token-price">39,590,000</span>
+            <span class="token-price-diff uk-text-primary">▼ 272,000 (-0.68%)</span>
+          </div>
+          <div class="height-100">
+            <canvas id="chart-1"></canvas>
+          </div>
+        </div>
+      </div>
+      <div class="uk-width-2xlarge inline-block">
+        <div class="uk-card uk-card-default margin-30 padding-bottom">
+          <div class="uk-padding align-left">
+            <span uk-icon="heart"></span>
+            <span class="token-name">BTC</span>
+            <span class="token-fullname">Bitcoin</span>
+            <br />
+            <span class="token-price">39,590,000</span>
+            <span class="token-price-diff uk-text-primary">▼ 272,000 (-0.68%)</span>
+          </div>
+          <div class="height-100">
+            <canvas id="chart-2"></canvas>
+          </div>
+        </div>
+      </div>
+      <div class="uk-width-2xlarge inline-block">
+        <div class="uk-card uk-card-default margin-30 padding-bottom">
+          <div class="uk-padding align-left">
+            <span uk-icon="heart"></span>
+            <span class="token-name">BTC</span>
+            <span class="token-fullname">Bitcoin</span>
+            <br />
+            <span class="token-price">39,590,000</span>
+            <span class="token-price-diff uk-text-primary">▼ 272,000 (-0.68%)</span>
+          </div>
+          <div class="height-100">
+            <canvas id="chart-3"></canvas>
+          </div>
+        </div>
+      </div>
+      <div class="uk-width-2xlarge inline-block">
+        <div class="uk-card uk-card-default margin-30 padding-bottom">
+          <div class="uk-padding align-left">
+            <span uk-icon="heart"></span>
+            <span class="token-name">BTC</span>
+            <span class="token-fullname">Bitcoin</span>
+            <br />
+            <span class="token-price">39,590,000</span>
+            <span class="token-price-diff uk-text-primary">▼ 272,000 (-0.68%)</span>
+          </div>
+          <div class="height-100">
+            <canvas id="chart-4"></canvas>
+          </div>
+        </div>
+      </div>
+      <div class="uk-width-2xlarge inline-block">
+        <div class="uk-card uk-card-default margin-30 padding-bottom">
+          <div class="uk-padding align-left">
+            <span uk-icon="heart"></span>
+            <span class="token-name">BTC</span>
+            <span class="token-fullname">Bitcoin</span>
+            <br />
+            <span class="token-price">39,590,000</span>
+            <span class="token-price-diff uk-text-primary">▼ 272,000 (-0.68%)</span>
+          </div>
+          <div class="height-100">
+            <canvas id="chart-5"></canvas>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="page-people">
+    <div class="section">
+      <h3 class="title-font section-title">&emsp;People&emsp;</h3>
+      <div class="uk-width-2xlarge inline-block">
+        <div class="uk-card uk-card-default margin-30 padding-bottom">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="page-lend">
+    <div class="section">
+      <h3 class="title-font section-title">&emsp;Lend&emsp;</h3>
+      <div class="uk-width-2xlarge inline-block">
+        <div class="uk-card uk-card-default margin-30 padding-bottom">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="page-mint">
+    <div class="section">
+      <h3 class="title-font section-title">&emsp;Mint&emsp;</h3>
+      <div class="uk-width-2xlarge inline-block">
+        <div class="uk-card uk-card-default margin-30 padding-bottom">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div>
+      <img class="uk-align-center partner_img" src="src/d3lablogo.png">
+    </div>
+  </footer>
+  
   <!-- Frontend Scripts -->
+  <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
   <script src="js/uikit.js"></script>
   <script src="js/uikit-icons.js"></script>
 
-  <!-- partial -->
-  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+  <!-- Interface function Scripts -->
+  <script src="../js/interface.js"></script>
 
   <!-- chart -->
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
