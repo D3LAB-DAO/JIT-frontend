@@ -171,12 +171,16 @@ a:hover {
   transition: none;
 }
 
-.people-card {
+.people-card,
+.uk-comment-avatar,
+.ask-accept-btn,
+.ask-reject-btn {
   cursor: pointer;
 }
 
 .people-card,
-.chart-card {
+.chart-card,
+.uk-comment-avatar {
   opacity: 0.9;
   transition: all 0.4s;
   -webkit-transition: all 0.4s;
@@ -186,7 +190,8 @@ a:hover {
 }
 
 .people-card:hover,
-.chart-card:hover {
+.chart-card:hover,
+.uk-comment-avatar:hover {
   transform: scale(1.08, 1.08);
   opacity: 1.0;
 }
@@ -205,8 +210,17 @@ a:hover {
   height: 40px;
 }
 
+.margin-x-small {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
 #lend-table th {
   text-align: right;
+}
+
+#request-table th {
+  text-align: center;
 }
 
 /* pages */
@@ -217,7 +231,8 @@ a:hover {
 #page-top,
 #page-people,
 #page-lend,
-#page-mint {
+#page-mint,
+#page-govern {
   display: none;
 }
 

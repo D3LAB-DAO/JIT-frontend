@@ -1,6 +1,6 @@
 /* Constants */
 // Page Types
-const PAGES = ['home', 'top', 'people', 'lend', 'mint'];
+const PAGES = ['home', 'top', 'people', 'lend', 'mint', 'govern'];
 
 /* Saved Values on Frontend */
 let current_page = 0;

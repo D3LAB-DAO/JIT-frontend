@@ -152,3 +152,8 @@ const chart_5 = new Chart(
     document.getElementById('chart-5'),
     config_5
 );
+
+const chart_my = new Chart(
+    document.getElementById('chart-my'),
+    config_5
+);

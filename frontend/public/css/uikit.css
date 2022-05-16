@@ -1983,6 +1983,25 @@ select.uk-form-width-xsmall {
   color: #fff;
 }
 /*
+ * Success
+ */
+.uk-button-success {
+  background-color: #32d296;
+  color: #fff;
+  border: 1px solid transparent;
+}
+/* Hover */
+.uk-button-success:hover {
+  background-color: #32d297bb;
+  color: #fff;
+}
+/* OnClick + Active */
+.uk-button-success:active,
+.uk-button-success.uk-active {
+  background-color: #32d296;
+  color: #fff;
+}
+/*
  * Secondary
  */
 .uk-button-secondary {
