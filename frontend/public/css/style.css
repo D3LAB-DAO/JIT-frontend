@@ -137,6 +137,11 @@ a:hover {
   margin-top: 10px;
 }
 
+.margin-y-small {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
 .width-50p {
   width: 50%;
 }
@@ -176,6 +181,23 @@ a:hover {
 .ask-accept-btn,
 .ask-reject-btn {
   cursor: pointer;
+}
+
+.govern-token-card {
+  height: 200px;
+}
+.govern-token-img {
+  border-radius: 50%;
+}
+
+.govern-token-name {
+  display: block;
+  font-weight: 600;
+}
+
+.govern-token-rate {
+  display: inline-block;
+  font-size: 0.8rem;
 }
 
 .people-card,
