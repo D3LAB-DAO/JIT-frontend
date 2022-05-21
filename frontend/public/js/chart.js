@@ -6,6 +6,48 @@ const labels = [
     'April',
     'May',
     'June',
+    'July',
+    'August',
+    'September',
+    'October',
+    'November',
+    'December',
+    'January',
+    'February',
+    'March',
+    'April',
+    'May',
+    'June',
+    'July',
+    'August',
+    'September',
+    'October',
+    'November',
+    'December',
+    'January',
+    'February',
+    'March',
+    'April',
+    'May',
+    'June',
+    'July',
+    'August',
+    'September',
+    'October',
+    'November',
+    'December',
+    'January',
+    'February',
+    'March',
+    'April',
+    'May',
+    'June',
+    'July',
+    'August',
+    'September',
+    'October',
+    'November',
+    'December',
 ];
 
 const options = {
@@ -29,6 +71,11 @@ const options = {
             }
         }
     },
+    elements: {
+        point: {
+            radius: 0
+        }
+    },
     plugins: {
         legend: {
             display: false
@@ -45,7 +92,8 @@ const data_1 = {
             label: 'rPSH',
             backgroundColor: 'rgb(255, 99, 132)',
             borderColor: 'rgb(255, 99, 132)',
-            data: [20, 10, 5, 2, 20, 30, 45],
+            data: [35, 39, 37, 36, 40, 38, 33, 35, 37, 35, 34, 32, 40, 39, 37, 33, 32, 20, 33, 35, 34, 35, 34, 32,
+                35, 39, 37, 33, 32, 31, 33, 35, 27, 25, 24, 22, 21, 20, 21, 30, 22, 20, 21, 18, 19, 20, 22, 21],
         }
     ]
 };
@@ -55,9 +103,9 @@ const data_2 = {
     datasets: [
         {
             label: 'rKYJ',
-            backgroundColor: 'rgb(99, 131, 255)',
-            borderColor: 'rgb(99, 131, 255)',
-            data: [5, 15, 10, 20, 10, 40, 40],
+            backgroundColor: 'rgb(83, 200, 132)',
+            borderColor: 'rgb(83, 200, 132)',
+            data: [23,22,20,24,24,21,23,21,23,24,25,23,25,20,25,23,20,21,20,24,21,21,22,23,26,25,27,27,26,26,25,27,25,51,50,49,51,55,53,51,53,50,50,52,52,53,50,51],
         }
     ]
 };
@@ -69,7 +117,7 @@ const data_3 = {
             label: 'rABC',
             backgroundColor: 'rgb(255, 99, 132)',
             borderColor: 'rgb(255, 99, 132)',
-            data: [10, 30, 15, 30, 15, 35, 20],
+            data: [23,22,23,20,21,22,23,22,20,21,20,21,17,17,17,18,20,18,17,19,18,20,17,20,17,14,17,16,17,16,17,14,16,16,15,16,11,13,10,13,12,12,12,13,10,12,11,10],
         }
     ]
 };
@@ -79,9 +127,9 @@ const data_4 = {
     datasets: [
         {
             label: 'rDEF',
-            backgroundColor: 'rgb(255, 99, 132)',
-            borderColor: 'rgb(255, 99, 132)',
-            data: [40, 30, 35, 20, 10, 5, 9],
+            backgroundColor: 'rgb(83, 200, 132)',
+            borderColor: 'rgb(83, 200, 132)',
+            data: [22,23,21,22,25,24,22,25,20,23,20,25,26,25,24,23,26,20,25,27,23,23,24,26,25,28,26,26,29,28,29,27,27,29,26,26,26,30,26,25,26,20,25,24,25,27,30,31],
         }
     ]
 };
@@ -93,7 +141,7 @@ const data_5 = {
             label: 'rGHI',
             backgroundColor: 'rgb(255, 99, 132)',
             borderColor: 'rgb(255, 99, 132)',
-            data: [30, 0, 40, 10, 5, 25, 15],
+            data: [30,33,31,30,32,35,35,32,34,30,31,34,34,32,31,31,34,31,33,35,34,32,34,35,10,13,11,10,12,12,13,12,11,11,11,13,21,20,20,20,24,24,20,22,23,20,20,18],
         }
     ]
 };
