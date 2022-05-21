@@ -276,7 +276,8 @@ a:hover {
 #page-people,
 #page-lend,
 #page-mint,
-#page-govern {
+#page-govern,
+#page-wallet {
   display: none;
 }
 

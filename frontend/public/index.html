@@ -31,10 +31,13 @@
     </div>
     <div class="uk-navbar-right">
       <div id="nav-connect">
-        <button class="uk-button uk-button-secondary uk-button-small">Connect →</button>
+        <button class="connect-btn uk-button uk-button-secondary uk-button-small" onclick="connectOnClick()"
+          uk-tooltip="title: Connect to metamask"><span class="connect-btn-text">Connect →</span></button>
       </div>
       <div id="nav-connect-sm">
-        <button class="uk-button uk-button-secondary uk-button-small" style="font-size:0.5rem;">→</button>
+        <button class="connect-btn uk-button uk-button-secondary uk-button-small" style="font-size:0.5rem;"
+          onclick="connectOnClick()" uk-tooltip="title: Connect to metamask"><span
+            class="connect-btn-text-sm">→</span></button>
       </div>
     </div>
   </nav>
@@ -574,9 +577,8 @@
     <div class="section">
       <h3 class="title-font section-title">
         &emsp;Govern&emsp;
-        <!--a href="https://www.tally.xyz/" target="_blank"-->
-          <span class="govern-icon" uk-icon="icon: sign-out; ratio: 1" onClick="window.open('https://www.tally.xyz/')" uk-tooltip="title: Go Tally"></span>
-        <!--/a-->
+        <span class="govern-icon" uk-icon="icon: sign-out; ratio: 1" onClick="window.open('https://www.tally.xyz/')"
+          uk-tooltip="title: Go Tally"></span>
       </h3>
 
       <div class="uk-width-2xlarge inline-block">
@@ -620,6 +622,20 @@
     </div>
   </div>
 
+  <div id="page-wallet">
+    <div class="section">
+      <h3 class="title-font section-title">&emsp;Check&emsp;</h3>
+      <div class="uk-width-2xlarge inline-block">
+        <div class="uk-width-2xlarge inline-block">
+          <div class="uk-card uk-card-default margin-30">
+            <img class="uk-width-medium uk-padding" src="src/fox.webp" />
+            <div class="padding-bottom">Please connect your wallet!</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <footer class="footer">
     <div>
       <img class="uk-align-center partner_img" src="src/d3lablogo.png">
@@ -630,6 +646,10 @@
   <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
   <script src="js/uikit.js"></script>
   <script src="js/uikit-icons.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/web3@latest/dist/web3.min.js"></script>
+
+  <!-- Request function Scripts -->
+  <script src="../js/interface_request.js"></script>
 
   <!-- Interface function Scripts -->
   <script src="../js/interface.js"></script>
